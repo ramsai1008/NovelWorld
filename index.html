@@ -1,23 +1,120 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Novelworld</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelPlanet - Read Free Novels Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="[https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap](https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap)" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Novelworld</h1>
-    <div class="novel-list">
-        <div class="novel">
-            <h2>The Last Mage</h2>
-            <p>Total Chapters: 1206</p>
-            <a href="novels/the-last-mage/index.html">Read</a>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="/">NovelPlanet</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Genres <span class="arrow-down"></span></a>
+                        <div class="dropdown-content">
+                            <a href="#">Fantasy</a>
+                            <a href="#">Sci-Fi</a>
+                            <a href="#">Romance</a>
+                            </div>
+                    </li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Completed</a></li>
+                    <li><a href="#">Random</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search novels...">
+                    <button type="submit">🔍</button>
+                </div>
+                <a href="#" class="btn btn-primary">Login / Register</a>
+                <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
+            </div>
         </div>
-        <div class="novel">
-            <h2>Shadow of Dawn</h2>
-            <p>Total Chapters: 1602</p>
-            <a href="novels/shadow-of-dawn/index.html">Read</a>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>The Journey of a Thousand Novels Begins Here</h2>
+                    <p>Discover a vast collection of free online novels across various genres. Dive into captivating stories today!</p>
+                    <a href="#" class="btn btn-hero">Start Reading</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="novel-grid recently-updated">
+            <div class="container">
+                <h2>Recently Updated Novels</h2>
+                <div class="grid-container">
+                    <div class="novel-card">
+                        <a href="novel-detail.html">
+                            <img src="images/novel-cover-1.jpg" alt="Novel Title 1">
+                            <h3>Novel Title 1</h3>
+                            <p class="author">By Author Name</p>
+                            <p class="genre">Fantasy | Action</p>
+                            <span class="status">Ongoing</span>
+                        </a>
+                    </div>
+                    <div class="novel-card">
+                        <a href="novel-detail.html">
+                            <img src="images/novel-cover-2.jpg" alt="Novel Title 2">
+                            <h3>Novel Title 2</h3>
+                            <p class="author">By Author Name</p>
+                            <p class="genre">Romance | Drama</p>
+                            <span class="status">Completed</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="novel-grid popular-by-genre">
+            <div class="container">
+                <h2>Popular Fantasy Novels</h2>
+                <div class="grid-container">
+                    <div class="novel-card">
+                        <a href="novel-detail.html">
+                            <img src="images/novel-cover-3.jpg" alt="Fantasy Novel">
+                            <h3>Fantasy Novel Title</h3>
+                            <p class="author">By Author Name</p>
+                            <p class="genre">Fantasy</p>
+                            <span class="status">Ongoing</span>
+                        </a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                </div>
+            <p>&copy; 2025 NovelPlanet. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
